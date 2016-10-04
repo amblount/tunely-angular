@@ -6,3 +6,12 @@
 angular
   .module('tunely', []);
   .controller('AlbumsIndexController', AlbumsIndexController);
+
+function AlbumsIndexController () {
+  var vm = this;
+
+  vm.newAlbum = {
+    name: 'Waterfalls',
+    artistName: 'TLC'
+  };
+}
