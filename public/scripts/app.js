@@ -4,7 +4,7 @@
  *
  */
 angular
-  .module('tunely', []);
+  .module('tunely', [])
   .controller('AlbumsIndexController', AlbumsIndexController);
 
 function AlbumsIndexController () {
@@ -14,4 +14,19 @@ function AlbumsIndexController () {
     name: 'Waterfalls',
     artistName: 'TLC'
   };
+
+  vm.albums = [
+  {
+    name: 'Coming Home',
+    artistName: 'Leon Bridges'
+  },
+  {
+    name: 'Are We There',
+    artistName: 'Sharon Van Etten'
+  },
+  {
+    name: 'The Queen is Dead',
+    artistName: 'The Smiths'
+  }
+];
 }

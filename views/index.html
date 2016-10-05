@@ -31,10 +31,11 @@
 
     <div class="container" ng-controller="AlbumsIndexController as albumsIndexCtrl">
       <!-- html inside here can use the information frm the AlbumsIndexController -->
-      <p>
-          {{AlbumsIndexController}}
-      </p>
-      <p><b>albumsIndexCtrl.newAlbum:</b> {{albumsIndexCtrl.newAlbum}}</p>
+      <div ng-repeat="album in albumsIndexCtrl.albums">
+          {{album}}
+      </div>
+      <input type="text" class="form-control" placeholder="New album name" ng-model="albumsIndexCtrl.newAlbum.name"><br>
+      <input type="text" class="form-control" placeholder="New album artist" ng-model="albumsIndexCtrl.newAlbum.artistName">
 
 
     </div>
